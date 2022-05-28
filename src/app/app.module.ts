@@ -3,14 +3,39 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './home/home.component';
+import { MaterialModuleModule } from './material-module/materialModule.module';
+import { BodyComponent } from './body/body.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { StatisticsComponent } from './statistics/statistics.component';
+
+import { SettingsComponent } from './settings/settings.component';
+import { NewMemberComponent } from './new-member/new-member.component';
+import { AllMemberComponent } from './all-member/all-member.component';
+import { AccountsComponent } from './accounts/accounts.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [	
+    AppComponent,
+      HomeComponent,
+      BodyComponent,
+      SidenavComponent,
+      DashboardComponent,
+      StatisticsComponent,
+      SettingsComponent,
+      NewMemberComponent,
+      AllMemberComponent,
+      AccountsComponent
+   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModuleModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
