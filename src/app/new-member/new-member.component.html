@@ -1,53 +1,104 @@
 <mat-card class="card">
     <mat-card-title class="title">Add New Member</mat-card-title>
+    <hr/>
     <mat-card-content>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-sm-4">
                 <mat-form-field appearance="outline">
-                    <mat-label>Outline form field</mat-label>
-                    <input matInput placeholder="Placeholder">
-                    <mat-hint>Hint</mat-hint>
+                    <mat-label>Full Name</mat-label>
+                    <input matInput placeholder="Full Name">
                 </mat-form-field>
             </div>
-            <div class="col-md-6">
+            <div class="col-sm-4">
                 <mat-form-field appearance="outline">
-                    <mat-label>Outline form field</mat-label>
-                    <input matInput placeholder="Placeholder">
-                    <mat-hint>Hint</mat-hint>
+                    <mat-label>Mobile No</mat-label>
+                    <input matInput placeholder="Mobile No">
+                </mat-form-field>
+            </div>  
+            <div class="col-sm-4">
+                <mat-form-field appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput placeholder="Email">
+                </mat-form-field>
+            </div>           
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <mat-form-field appearance="outline">
+                    <mat-label>Father's Name</mat-label>
+                    <input matInput placeholder="Full Name">
                 </mat-form-field>
             </div>
-            <div class="col-md-4">.g-col-4</div>
-          </div>
-        <mat-grid-list cols="2">
-            <mat-grid-tile>
+            <div class="col-sm-2">
                 <mat-form-field appearance="outline">
-                    <mat-label>Outline form field</mat-label>
-                    <input matInput placeholder="Placeholder">
-                    <mat-hint>Hint</mat-hint>
+                    <mat-label>Father's Mobile No</mat-label>
+                    <input matInput placeholder="Mobile No">
                 </mat-form-field>
-            </mat-grid-tile>
-            <mat-grid-tile>
+            </div>  
+            <div class="col-sm-2">
                 <mat-form-field appearance="outline">
-                    <mat-label>Outline form field</mat-label>
-                    <input matInput placeholder="Placeholder">
-                    <mat-hint>Hint</mat-hint>
+                    <mat-label>Father's Mobile No</mat-label>
+                    <input matInput placeholder="Mobile No">
                 </mat-form-field>
-            </mat-grid-tile>
-            <mat-grid-tile>
+            </div>  
+            <div class="col-sm-4">
                 <mat-form-field appearance="outline">
-                    <mat-label>Outline form field</mat-label>
-                    <input matInput placeholder="Placeholder">
-                    <mat-hint>Hint</mat-hint>
+                    <mat-label>Mother's Name</mat-label>
+                    <input matInput placeholder="Email">
                 </mat-form-field>
-            </mat-grid-tile>
-            <mat-grid-tile>
+            </div>           
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-4">
+                <label class="example-radio-group">Religion</label>
+                <mat-radio-group>
+                    <mat-radio-button value="muslim">Muslim</mat-radio-button>
+                    <mat-radio-button value="hindu">Hindu</mat-radio-button>
+                    <mat-radio-button value="Christian">Christian</mat-radio-button>
+                    <mat-radio-button value="others">Others</mat-radio-button>
+                </mat-radio-group>               
+            </div> 
+            <div class="col-sm-4">
+                <label class="example-radio-group">Married</label>
+                <mat-radio-group>
+                    <mat-radio-button value="yes">Yes</mat-radio-button>
+                    <mat-radio-button value="no">No</mat-radio-button>
+                </mat-radio-group>               
+            </div> 
+            <div class="col-sm-4">
+                <label class="example-radio-group">Profession</label>
+                <mat-radio-group>
+                    <mat-radio-button value="jobHolder">Job Holder</mat-radio-button>
+                    <mat-radio-button value="business">Business</mat-radio-button>
+                    <mat-radio-button value="student">Student</mat-radio-button>
+                    <mat-radio-button value="other">Other</mat-radio-button>
+                </mat-radio-group>               
+            </div>                      
+        </div>     
+        
+        
+        <div class="row">
+            <div class="col-sm-4">
                 <mat-form-field appearance="outline">
-                    <mat-label>Outline form field</mat-label>
-                    <input matInput placeholder="Placeholder">
-                    <mat-hint>Hint</mat-hint>
+                    <mat-label>Gurdian's Name</mat-label>
+                    <input matInput placeholder="FullGurdian's Name">
                 </mat-form-field>
-            </mat-grid-tile>
-          </mat-grid-list>
+            </div>
+            <div class="col-sm-4">
+                <mat-form-field appearance="outline">
+                    <mat-label>Gurdian's Mobile No</mat-label>
+                    <input matInput placeholder="Gurdian's Mobile No">
+                </mat-form-field>
+            </div>  
+            <div class="col-sm-4">
+                <mat-form-field appearance="outline">
+                    <mat-label>Address</mat-label>
+                    <input matInput placeholder="Address">
+                </mat-form-field>
+            </div>           
+        </div>  
+      
     </mat-card-content>
     <mat-card-actions>
       <button mat-button>LIKE</button>

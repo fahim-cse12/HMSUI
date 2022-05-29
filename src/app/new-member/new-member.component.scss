@@ -1,16 +1,26 @@
 .card {
     max-width: 100%;
     border-radius: 0.5rem;
-    box-shadow: #a273e8;
+
     .title{
-      color: #330299;
+      color: #263238;
     }
 
   }
-  mat-grid-tile {
-    background: lightblue;
-  }
 
   mat-form-field{
-    width: auto;
+    width: 100%;
+  }
+
+  mat-radio-button ~ mat-radio-button {
+    margin-left: 16px;
+  }
+
+
+  .example-radio-group {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+    align-items: flex-start;
+    border-bottom: 0.5px solid #330299;
   }

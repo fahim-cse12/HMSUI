@@ -16,14 +16,7 @@ export class NewMemberComponent implements OnInit {
   SaveOrUpdate: string = "Save";
 
   ngOnInit(): void {
-    this.productForm = this.formBuilder.group({
-      productName: ['', Validators.required],
-      category: ['', Validators.required],
-      freshness: ['', Validators.required],
-      comments: ['', Validators.required],
-      price: ['', Validators.required],
-      date: ['', Validators.required],
-    });
+  
   }
 
 }
