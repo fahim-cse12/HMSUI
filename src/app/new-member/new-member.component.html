@@ -68,35 +68,85 @@
             </div> 
             <div class="col-sm-4">
                 <label class="example-radio-group">Profession</label>
-                <mat-radio-group>
-                    <mat-radio-button value="jobHolder">Job Holder</mat-radio-button>
-                    <mat-radio-button value="business">Business</mat-radio-button>
-                    <mat-radio-button value="student">Student</mat-radio-button>
-                    <mat-radio-button value="other">Other</mat-radio-button>
+                <mat-radio-group [(ngModel)]="profession">
+                    <mat-radio-button value="1">Job Holder</mat-radio-button>
+                    <mat-radio-button value="2">Business</mat-radio-button>
+                    <mat-radio-button value="3">Student</mat-radio-button>
+                    <mat-radio-button value="4">Other</mat-radio-button>
                 </mat-radio-group>               
             </div>                      
         </div>     
         
         
-        <div class="row">
+        <div class="row" *ngIf="profession == 3">
             <div class="col-sm-4">
                 <mat-form-field appearance="outline">
                     <mat-label>Gurdian's Name</mat-label>
-                    <input matInput placeholder="FullGurdian's Name">
+                    <input matInput placeholder="Gurdian's Name">
                 </mat-form-field>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-2">
                 <mat-form-field appearance="outline">
                     <mat-label>Gurdian's Mobile No</mat-label>
                     <input matInput placeholder="Gurdian's Mobile No">
                 </mat-form-field>
+            </div> 
+            <div class="col-sm-2">
+                <mat-form-field appearance="outline">
+                    <mat-label>Location</mat-label>
+                    <input matInput placeholder="Location">
+                </mat-form-field>
             </div>  
             <div class="col-sm-4">
                 <mat-form-field appearance="outline">
-                    <mat-label>Address</mat-label>
-                    <input matInput placeholder="Address">
+                    <mat-label>School/College/University</mat-label>
+                    <input matInput placeholder="School/College/University">
                 </mat-form-field>
             </div>           
+        </div>  
+
+        <div class="row" *ngIf="profession == 1">
+            <div class="col-sm-4">
+                <mat-form-field appearance="outline">
+                    <mat-label>Organization Name</mat-label>
+                    <input matInput placeholder="Organization Name">
+                </mat-form-field>
+            </div>
+            <div class="col-sm-4">
+                <mat-form-field appearance="outline">
+                    <mat-label>Organization Location</mat-label>
+                    <input matInput placeholder="Organization Location">
+                </mat-form-field>
+            </div> 
+            <div class="col-sm-4">
+                <mat-form-field appearance="outline">
+                    <mat-label>Designation</mat-label>
+                    <input matInput placeholder="Designation">
+                </mat-form-field>
+            </div>  
+                   
+        </div>  
+
+        <div class="row" *ngIf="profession == 2">
+            <div class="col-sm-4">
+                <mat-form-field appearance="outline">
+                    <mat-label>Business Type</mat-label>
+                    <input matInput placeholder="Organization Name">
+                </mat-form-field>
+            </div>
+            <div class="col-sm-4">
+                <mat-form-field appearance="outline">
+                    <mat-label>Business Location</mat-label>
+                    <input matInput placeholder="Organization Location">
+                </mat-form-field>
+            </div> 
+            <div class="col-sm-4">
+                <mat-form-field appearance="outline">
+                    <mat-label>Business License</mat-label>
+                    <input matInput placeholder="Designation">
+                </mat-form-field>
+            </div>  
+                   
         </div>  
       
     </mat-card-content>

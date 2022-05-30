@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, Validators } from '@angular/forms';
+import { FormGroup, Validators,FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-new-member',
@@ -11,12 +11,12 @@ export class NewMemberComponent implements OnInit {
 
   constructor() { }
 
-  freshnessList = ["Brand New", "Used", "Low Quality"];
-  productForm!: FormGroup;
+  profession:any;
+
   SaveOrUpdate: string = "Save";
 
   ngOnInit(): void {
-  
+   console.log(this.profession);
   }
 
 }

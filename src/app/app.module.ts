@@ -15,7 +15,7 @@ import { SettingsComponent } from './settings/settings.component';
 import { NewMemberComponent } from './new-member/new-member.component';
 import { AllMemberComponent } from './all-member/all-member.component';
 import { AccountsComponent } from './accounts/accounts.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [	
@@ -35,7 +35,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModuleModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
