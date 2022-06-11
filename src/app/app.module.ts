@@ -16,9 +16,13 @@ import { NewMemberComponent } from './new-member/new-member.component';
 import { AllMemberComponent } from './all-member/all-member.component';
 import { AccountsComponent } from './accounts/accounts.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { UserService } from './services/user.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [	
+  declarations: [			
     AppComponent,
       HomeComponent,
       BodyComponent,
@@ -28,7 +32,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
       SettingsComponent,
       NewMemberComponent,
       AllMemberComponent,
-      AccountsComponent
+      AccountsComponent,
+      LoginComponent,
+      RegisterComponent
    ],
   imports: [
     BrowserModule,
@@ -36,9 +42,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     MaterialModuleModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
+    
   ],
-  providers: [],
+  providers: [
+    HttpClient,
+    UserService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

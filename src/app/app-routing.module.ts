@@ -5,6 +5,8 @@ import { NewMemberComponent } from './new-member/new-member.component';
 import { AllMemberComponent } from './all-member/all-member.component';
 import { StatisticsComponent } from './statistics/statistics.component';
 import { AccountsComponent } from './accounts/accounts.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'dashboard', pathMatch:'full'},
@@ -12,7 +14,9 @@ const routes: Routes = [
   {path: 'newMember', component: NewMemberComponent},
   {path: 'allMember', component: AllMemberComponent},
   {path: 'statistics', component: StatisticsComponent},
-  {path: 'accounts', component: AccountsComponent}
+  {path: 'accounts', component: AccountsComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'register', component: RegisterComponent}
  
 ];
 

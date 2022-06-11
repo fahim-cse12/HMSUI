@@ -1,6 +1,11 @@
 <mat-toolbar color="primary">
-  <mat-toolbar-row class="banner">
-    <span>শান্তি নীড় ছাত্রী নিবাস</span>
+  <mat-toolbar-row>
+    <!-- <span>শান্তি নীড় ছাত্রী নিবাস</span> -->
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="login">
+      <a [routerLink]="[ '/login' ]">Login</a>
+    </button>
+      
   </mat-toolbar-row>
 </mat-toolbar>
 <div class="body" [ngClass]="getBodyClass()">
