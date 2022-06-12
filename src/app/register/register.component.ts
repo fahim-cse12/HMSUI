@@ -22,17 +22,13 @@ export class RegisterComponent implements OnInit {
 
   onSubmit(){
     console.log(this.signUpForm.value);
-    let fullName = this.signUpForm.controls["fullName"].value;
-    let email = this.signUpForm.controls["email"].value;
-    let password = this.signUpForm.controls["password"].value;
-
-    this.userService.register(fullName, email, password).subscribe({
+    this.userService.register(this.signUpForm.value).subscribe({
       next:(res)=>{
         alert("User Added Successfully");
         this.signUpForm.reset();
       },
-      error:()=>{
-        alert("Something Went Wrong");
+      error:(err)=>{
+        alert(err.error.text);
       }
     })
   }

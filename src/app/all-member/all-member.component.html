@@ -1,1 +1,17 @@
-<p>all-member works!</p>
+
+<table class="table table-striped">
+    <thead>
+      <th>Full Name</th>
+      <th>Email</th>
+  
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of allUser">
+        <td>{{item.fullName}}</td>
+        <td>{{item.email}}</td>
+    
+      </tr>
+    </tbody>
+  </table> 
+
+  
